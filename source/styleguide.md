@@ -1,6 +1,6 @@
-# WordCamp [Name] [Year]
+# WordCamp Galicia 2021
 
-Style guide for the WordCamp [Name] [Year] theme
+Style guide for the WordCamp Galicia 2021 theme
 
 ## Style guide
 
