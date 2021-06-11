@@ -17,4 +17,8 @@ hr {
   border: 0;
   border-top: 1px solid $color-grey-10;
 
+    &.wp-block-separator{
+        color: $color-brand-primary;
+    }
+
 }

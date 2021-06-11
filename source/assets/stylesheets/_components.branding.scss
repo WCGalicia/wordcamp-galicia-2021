@@ -46,6 +46,7 @@
 .site-title {
 
     margin: 0;
+    max-width: 400px;
 
     font-size: ms(4);
     line-height: 1;
@@ -53,14 +54,14 @@
     font-weight: $bold;
     color: $color-text-strong;
 
-    background: -webkit-linear-gradient($color-brand-primary, $color-brand-secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     a {
 
         display: block;
         color: $color-link-hover;
+
+        background: -webkit-linear-gradient($color-brand-primary, $color-brand-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
         &:hover,
         &:focus,
