@@ -19,7 +19,17 @@
 
 .site-header {
 
-    background-color: $color-brand-tertiary;
+    background-color: $light-grey;
+    border-bottom: solid 10px $color-brand-primary;
+
+    &:after{
+        content: "";
+        z-index: 201;
+        background: $image-galicia no-repeat center center / contain;
+        position: absolute;
+        right: 1em; bottom: -2em;
+        width: 300px; height: 300px;
+    }
 
 }
 
