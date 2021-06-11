@@ -19,7 +19,11 @@
 
 .site-header {
 
-    background-color: $light-grey;
+    $padding-y: $container-unit-medium * 3;
+    $padding-x: $container-unit-medium * 6;
+    padding: $padding-y $padding-x;
+
+    background: $light-grey $image-triangles-01 no-repeat left center / contain;
     border-bottom: solid 10px $color-brand-primary;
 
     &:after{
@@ -39,11 +43,6 @@
     overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
     //@include container-padding(1.5);
-    $padding-y: $container-unit-medium * 3;
-    $padding-right: $container-unit-medium * 6;
-    padding: $padding-y 0 $padding-y $padding-right;
-
-    background: $light-grey $image-triangles-01 no-repeat left center / contain;
 
     .home & {
 
