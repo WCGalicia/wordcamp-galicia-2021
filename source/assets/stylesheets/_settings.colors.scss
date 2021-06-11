@@ -278,6 +278,8 @@ $color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
  * Shades of grey
  */
 
+$light-grey:                      #EEEFEE;
+
 $color-grey-10:                   tint($color-brand-tertiary, 90%); // Light
 $color-grey-20:                   tint($color-brand-tertiary, 80%);
 $color-grey-30:                   tint($color-brand-tertiary, 70%);

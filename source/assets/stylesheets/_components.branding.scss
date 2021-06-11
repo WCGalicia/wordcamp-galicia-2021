@@ -19,83 +19,92 @@
 
 .site-header {
 
-  background-color: $color-brand-tertiary;
+    background-color: $color-brand-tertiary;
 
 }
 
 .site-header .site-branding {
 
-  position: relative; // Add position: relative to keep the light beams from leaking out
-  overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
+    position: relative; // Add position: relative to keep the light beams from leaking out
+    overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
-  @include container-padding(1.5);
+    //@include container-padding(1.5);
+    $padding-y: $container-unit-medium * 3;
+    $padding-right: $container-unit-medium * 6;
+    padding: $padding-y 0 $padding-y $padding-right;
 
-  text-align: center;
+    background: $image-triangles-01 no-repeat left center / contain;
 
-  .home & {
+    .home & {
 
-    @include container-padding(3.5);
+        //@include container-padding(3.5);
 
-  }
+    }
 
 }
 
 .site-title {
 
-  margin: 0;
+    margin: 0;
 
-  font-size: ms(2);
-  line-height: 1;
-  font-family: $font-headline;
-  font-weight: $bold;
-  color: $color-text-strong;
+    font-size: ms(4);
+    line-height: 1;
+    font-family: $font-headline;
+    font-weight: $bold;
+    color: $color-text-strong;
 
-  a {
+    background: -webkit-linear-gradient($color-brand-primary, $color-brand-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    display: block;
-    color: $color-link-hover;
+    a {
 
-    &:hover,
-    &:focus,
-    &:active {
+        display: block;
+        color: $color-link-hover;
 
-      color: $color-link;
-      text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+
+            color: $color-link;
+            text-decoration: none;
+
+        }
 
     }
 
-  }
+    /*
+    a:before {
 
-  a:before {
+        display: block;
+        width: ($site-logo-width * $site-logo-proportion);
+        height: ($site-logo-height * $site-logo-proportion);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $unit-s;
 
-    display: block;
-    width: ($site-logo-width * $site-logo-proportion);
-    height: ($site-logo-height * $site-logo-proportion);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: $unit-s;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-image: $site-logo-path;
+        background-size: 100%;
 
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: $site-logo-path;
-    background-size: 100%;
+        content: "";
 
-    content: "";
-
-  }
+      }
+     */
 
 }
 
 .site-description {
 
-  margin: 0;
-  margin-top: $unit-xs;
+    margin: 0;
+    margin-top: $unit-xs;
 
-  font-size: ms(0);
-  line-height: ms(1);
-  font-family: $font-body;
-  font-weight: $regular;
-  text-transform: none;
-  color: $color-text-weak;
+    font-size: ms(0);
+    line-height: ms(1);
+    font-family: $font-body;
+    font-weight: $regular;
+    text-transform: none;
+    color: $color-text-weak;
 
 }

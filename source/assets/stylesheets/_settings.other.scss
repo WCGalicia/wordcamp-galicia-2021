@@ -47,7 +47,7 @@ $site-logo-path:                url('https://s.w.org/about/images/logos/wordpres
 /* Hero */
 $site-hero-path-small:          url('https://c2.staticflickr.com/8/7342/27927265956_6755e5913e_b.jpg'); // Background image
 $site-hero-path-large:          url('https://c2.staticflickr.com/8/7342/27927265956_e66b460cbe_o.jpg'); // Background image
-$site-hero-background:          white; // tint($color-brand-secondary, 90%); // Hero color background
+$site-hero-background:          $light-grey; // tint($color-brand-secondary, 90%); // Hero color background
 $site-hero-overlay:             1; // Image overlay color opacity
 
 /* Media queries */
@@ -62,3 +62,9 @@ $image-pattern-01:              url('https://2017.europe.wordcamp.org/files/2017
 $image-realistic-ticket:        url('https://2017.europe.wordcamp.org/files/2017/01/realistic-ticket.png');
 $image-bullet-color:            url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
 $image-bullet-dark:             url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-dark.png');
+
+
+/* Triangles images */
+$image-triangles-01:            url('https://galicia.wordcamp.org/2021/files/2021/06/bg-triangulos-01.png');
+$image-triangles-02:            url('https://galicia.wordcamp.org/2021/files/2021/06/bg-triangulos-02.png');
+$image-triangles-03:            url('https://galicia.wordcamp.org/2021/files/2021/06/bg-triangulos-03.png');
