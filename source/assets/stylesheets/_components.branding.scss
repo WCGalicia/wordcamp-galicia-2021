@@ -19,9 +19,15 @@
 
 .site-header {
 
-    $padding-y: $container-unit-medium * 3;
-    $padding-x: $container-unit-medium * 7;
-    padding: $padding-y $padding-x;
+    $padding-y: $container-unit-medium * 2;
+    $padding-x: $container-unit-medium * 4;
+    padding: $padding-y 0 $padding-y $padding-x;
+
+    @include breakpoint(medium) {
+        $padding-y: $container-unit-medium * 3;
+        $padding-x: $container-unit-medium * 7;
+        padding: $padding-y 0 $padding-y $padding-x;
+    }
 
     background: $light-grey $image-triangles-01 no-repeat left center / contain;
     border-bottom: solid 10px $color-brand-primary;
@@ -31,10 +37,12 @@
         z-index: 201;
         background: $image-galicia no-repeat center center / contain;
         position: absolute;
-        bottom: -2em;
-        right: -2em;
-        /* right: calc( (100vw - 800px) / 2 - 150px); */
+        bottom: 2em;
+        right: 2em;
         width: 300px; height: 300px;
+        @include breakpoint(to-extra-large){
+            display: none;
+        }
     }
 
 }
@@ -61,11 +69,12 @@
 
     margin: 0;
 
-    @include breakpoint(large){
+    @include breakpoint(medium){
+        font-size: ms(6);
         max-width: 440px;
     }
 
-    font-size: ms(6);
+    font-size: ms(3);
     line-height: 1;
     font-family: $font-headline;
     font-weight: $bold;
