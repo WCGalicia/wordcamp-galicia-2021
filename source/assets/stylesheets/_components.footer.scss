@@ -30,6 +30,18 @@
     color: white;
     background-color: $color-link;
 
+    .widget{
+        padding: 1em;
+    }
+
+    .menu{
+        a{
+            padding: 0;
+            color: white;
+        }
+    }
+
+
 }
 
 .site-info-generator {
