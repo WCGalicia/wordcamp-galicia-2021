@@ -37,10 +37,10 @@
         z-index: 201;
         background: $image-galicia no-repeat center center / contain;
         position: absolute;
-        bottom: 2em;
+        bottom: -2em;
         right: 2em;
         width: 300px; height: 300px;
-        @include breakpoint(to-extra-large){
+        @include breakpoint(to-large){
             display: none;
         }
     }
