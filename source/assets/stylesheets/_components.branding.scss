@@ -20,7 +20,7 @@
 .site-header {
 
     $padding-y: $container-unit-medium * 3;
-    $padding-x: $container-unit-medium * 6;
+    $padding-x: $container-unit-medium * 7;
     padding: $padding-y $padding-x;
 
     background: $light-grey $image-triangles-01 no-repeat left center / contain;
@@ -31,13 +31,18 @@
         z-index: 201;
         background: $image-galicia no-repeat center center / contain;
         position: absolute;
-        right: 1em; bottom: -2em;
+        bottom: -2em;
+        right: -2em;
+        /* right: calc( (100vw - 800px) / 2 - 150px); */
         width: 300px; height: 300px;
     }
 
 }
 
 .site-header .site-branding {
+
+    max-width: $container-max-width;
+    margin: auto;
 
     position: relative; // Add position: relative to keep the light beams from leaking out
     overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
@@ -55,9 +60,12 @@
 .site-title {
 
     margin: 0;
-    max-width: 400px;
 
-    font-size: ms(4);
+    @include breakpoint(large){
+        max-width: 440px;
+    }
+
+    font-size: ms(6);
     line-height: 1;
     font-family: $font-headline;
     font-weight: $bold;
@@ -66,7 +74,7 @@
     a {
 
         display: block;
-        color: $color-link-hover;
+        color: transparent;
 
         background: -webkit-linear-gradient($color-brand-primary, $color-brand-secondary);
         -webkit-background-clip: text;
@@ -115,6 +123,6 @@
     font-family: $font-body;
     font-weight: $regular;
     text-transform: none;
-    color: $color-text-weak;
+    color: $color-brand-tertiary;
 
 }
