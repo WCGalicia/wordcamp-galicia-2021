@@ -2,9 +2,9 @@
 ===================================================== */
 
 // Temporary hides the main menu
-#site-navigation{
+/*#site-navigation{
     display: none;
-}
+}*/
 
 // Navigation
 //
@@ -35,10 +35,10 @@
   font-weight: $bold;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link;
+  color: $color-text-strong-invert;
 
   border-radius: 0;
-  background-color: rgba($color-brand-tertiary, .9);
+  background-color: rgba($color-brand-primary, .9);
 
   cursor: pointer;
 
@@ -47,8 +47,8 @@
   &:focus,
   &.focus {
 
-    color: $color-link-hover;
-    background-color: rgba($color-brand-tertiary, .9);
+    color: $color-text-strong-invert;
+    background-color: rgba($color-brand-primary, .9);
 
   }
 
@@ -76,7 +76,7 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-link;
+    border-top-color: $color-text-strong-invert;
 
     content: "";
 
@@ -116,6 +116,7 @@
 .main-navigation {
 
   position: relative;
+  margin-top: $container-unit-medium * 2;
 
   &:before {
 
@@ -215,7 +216,7 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
+    color: $color-text-strong-invert;
     background-color: $color-link-hover;
 
   }
@@ -247,6 +248,7 @@
 
 .menu-item-has-children {
 
+  color: $color-text-strong-invert;
   background-color: rgba($color-brand-tertiary, .6);
 
   .dropdown-toggle {
@@ -291,12 +293,12 @@
     &:hover > a,
     &.focus > a {
 
-      color: $color-text-strong;
+      color: $color-text-strong-invert;
       background-color: $color-link;
 
       &:after {
 
-        border-top-color: $color-text-strong;
+        border-top-color: $color-text-strong-invert;
 
       }
 
@@ -379,7 +381,7 @@
 
       padding: rem(10) $unit-s;
 
-      color: $color-text;
+      color: $color-text-strong-invert;
 
     }
 

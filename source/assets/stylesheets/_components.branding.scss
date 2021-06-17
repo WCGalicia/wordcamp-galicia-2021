@@ -21,12 +21,12 @@
 
     $padding-y: $container-unit-medium * 2;
     $padding-x: $container-unit-medium * 4;
-    padding: $padding-y 0 $padding-y $padding-x;
+    padding: $padding-y 0 0 $padding-x;
 
     @include breakpoint(medium) {
         $padding-y: $container-unit-medium * 3;
         $padding-x: $container-unit-medium * 7;
-        padding: $padding-y 0 $padding-y $padding-x;
+        padding: $padding-y 0 0 $padding-x;
     }
 
     background: $light-grey $image-triangles-01 no-repeat left center / contain;
