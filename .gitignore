@@ -4,3 +4,4 @@ config.codekit
 *.log
 *.scssc
 node_modules
+package-lock.json
