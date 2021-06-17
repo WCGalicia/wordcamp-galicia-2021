@@ -189,6 +189,8 @@
   font-weight: $bold;
   text-align: left;
 
+  width:100%;
+
   @include breakpoint(small) {
 
     margin: 0 rem(1);
@@ -197,6 +199,12 @@
     @include font-size(18);
     line-height: em(24,18);
     text-align: center;
+
+  }
+
+  @include breakpoint(medium) {
+
+    width:inherit;
 
   }
 
