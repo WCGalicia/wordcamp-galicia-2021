@@ -20,11 +20,17 @@ gulp.task('kss', shell.task(
 gulp.task('browserSync', function() {
   browserSync({
     // Display the build folder first
-    startPath: 'styleguide',
-    server: {
-      // Start in root (important for relative paths between build and style guide folders)
-      baseDir: '.'
-    }
+    proxy: 'https://galicia.wordcamp.org/2021/',
+	  serveStatic: ["build/assets/stylesheets"],
+	  files: "/build/assets/stylesheets/style.css",
+	  snippetOptions: {
+		  rule: {
+			  match: /<\/head>/i,
+			  fn: function (snippet, match) {
+				  return '<link rel="stylesheet" type="text/css" href="/style.css"/>' + snippet + match;
+			  }
+		  }
+	  }
   })
 })
 
