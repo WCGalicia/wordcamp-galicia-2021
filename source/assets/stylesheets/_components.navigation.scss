@@ -193,7 +193,7 @@
 
     width: 100%;
 
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
 
         margin: 0 rem(1);
         display: inline-block;
@@ -204,7 +204,7 @@
 
     }
 
-    @include breakpoint(medium) {
+    @include breakpoint(small) {
 
         width: inherit;
 
