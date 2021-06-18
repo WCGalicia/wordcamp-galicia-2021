@@ -218,7 +218,7 @@
 
     }
 
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
 
         color: $color-link;
 
