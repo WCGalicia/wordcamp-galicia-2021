@@ -164,13 +164,11 @@
 
     @include breakpoint(to-medium) {
 
-        border-top: 1px solid rgba(255, 255, 255, .2);
-
-        display: none !important;
+        display: none;
 
         .toggled-on & {
 
-            display: block;
+            display: block !important;
 
         }
 
@@ -181,6 +179,9 @@
 .menu-item {
 
     position: relative;
+    #site-navigation &{
+        float: none;
+    }
 
     margin: 0;
     display: block;
@@ -188,7 +189,7 @@
     font-family: $font-headline;
     font-size: ms(0);
     font-weight: $bold;
-    text-align: left;
+    text-align: center;
 
     width: 100%;
 
@@ -387,7 +388,6 @@
 
             width: 100%;
             margin: 0;
-            border-top: 1px solid rgba(255, 255, 255, .2);
 
             text-align: left;
 
