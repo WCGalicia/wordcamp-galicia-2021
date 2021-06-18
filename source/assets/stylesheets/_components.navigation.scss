@@ -115,24 +115,10 @@
 
 .main-navigation {
 
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
     width: auto;
     position: absolute;
-
-    &:before {
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        height: rem(2);
-        background-color: $color-link;
-
-        content: "";
-
-    }
 
     @include breakpoint(to-medium) {
 
