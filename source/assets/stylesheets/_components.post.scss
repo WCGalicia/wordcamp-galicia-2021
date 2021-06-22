@@ -29,8 +29,9 @@
 
 .entry-title {
 
-  font-size: ms(4);
+  font-size: ms(2);
   line-height: ms(1);
+  text-transform:uppercase;
 
   margin-bottom: $unit-default;
 
@@ -43,6 +44,13 @@
       text-decoration: none;
 
     }
+
+  }
+  &:after {
+
+    font-size: 0.8em;
+    line-height: ms(0);
+    font-size: $light;
 
   }
 
@@ -118,4 +126,31 @@
 
   }
 
+}
+
+h2, h3 {
+  font-size: ms(1);
+  line-height: ms(1);
+  font-weight:$semibold;
+}
+
+h4 {
+  font-size: ms(1);
+  line-height: ms(0);
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+ul li {
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.has-medium-font-size {
+  font-size: ms(1);
+  line-height: ms(1);
+  font-weight:$semibold;
 }
