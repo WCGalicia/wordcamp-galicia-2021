@@ -176,7 +176,7 @@
     font-size: ms(0);
     font-weight: $bold;
     text-align: center;
-
+    
     width: 100%;
 
     @include breakpoint(medium) {
@@ -201,9 +201,15 @@
 .menu-item a {
 
     display: block;
-    color: $color-text-strong-invert;
+    color: $color-text-strong !important;
 
-    padding: $unit-xs $unit-s;
+    font-size: 0.9rem !important;
+    line-height: 1rem;
+    font-weight: 300;
+
+    padding: 5px 10px;
+
+    text-transform: uppercase;
 
     text-decoration: none;
     transition: all .1s ease;
@@ -212,10 +218,8 @@
     &:active,
     &:focus,
     &.focus {
-
-        color: $color-text-strong-invert;
+        color: $color-text-strong-invert !important;
         background-color: $color-link-hover;
-
     }
 
     @include breakpoint(medium) {
@@ -226,13 +230,13 @@
 
     @include breakpoint(medium) {
 
-        padding: $unit-s $unit-m;
+        padding: $unit-mini $unit-mini;
 
     }
 
     @include breakpoint(large) {
 
-        padding: .7rem $unit-l;
+        padding: $unit-s/2 $unit-s/2;
 
     }
 
@@ -240,9 +244,27 @@
 
 .current-menu-item > a {
 
-    color: $color-text-strong-invert;
+    color: $color-text-strong-invert !important;
     background-color: $color-link;
 
+}
+
+#menu-item-539 a:after {
+    content: "\a Llamada a ponentes";
+    white-space: pre-wrap;
+    font-style: oblique;
+    text-transform: uppercase;
+    font-size:0.7rem;
+    font-weight: 300;
+}
+
+#menu-item-538 a:after {
+    content: "\a Llamada a patrocinadores";
+    white-space: pre-wrap;
+    font-style: oblique;
+    text-transform: uppercase;
+    font-size:0.7rem;
+    font-weight: 300;
 }
 
 /*
