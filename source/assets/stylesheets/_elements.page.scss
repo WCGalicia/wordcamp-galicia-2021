@@ -53,7 +53,7 @@ p {
 strong {
 
   font-weight: $bold;
-  color: darken($color-text-paragraph, 20%);
+  color: inherit;
 
 }
 
