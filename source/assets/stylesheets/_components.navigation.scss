@@ -176,7 +176,7 @@
     font-size: ms(0);
     font-weight: $bold;
     text-align: center;
-    
+
     width: 100%;
 
     @include breakpoint(medium) {
@@ -265,6 +265,14 @@
     text-transform: uppercase;
     font-size:0.7rem;
     font-weight: 300;
+}
+
+#menu-item-1150 a{
+    top: -10px;
+    padding: 0.75rem;
+    color: white !important;
+    background: #c22820;
+    position: relative;
 }
 
 /*
