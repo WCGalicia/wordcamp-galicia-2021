@@ -202,6 +202,7 @@
 
     display: block;
     color: $color-text-strong !important;
+    border: solid 1px transparent;
 
     font-size: 0.9rem !important;
     line-height: 1rem;
@@ -218,8 +219,9 @@
     &:active,
     &:focus,
     &.focus {
-        color: $color-text-strong-invert !important;
-        background-color: $color-link-hover;
+        color: $color-text !important;
+        border: solid 1px $color-brand-secondary;
+        border-radius: 1px;
     }
 
     @include breakpoint(medium) {
@@ -244,9 +246,11 @@
 
 .current-menu-item > a {
 
-    color: $color-text-strong-invert !important;
-    background-color: $color-brand-secondary;
-    border-radius: 5px;
+    &, &:hover{
+        color: $color-text-strong-invert !important;
+        background-color: $color-brand-secondary;
+        border-radius: 1px;
+    }
 
 }
 
@@ -274,6 +278,7 @@
         padding: 0.75rem;
         color: white !important;
         background: #c22820;
+        border-radius: 1px;
         position: relative;
     }
 }
