@@ -245,7 +245,8 @@
 .current-menu-item > a {
 
     color: $color-text-strong-invert !important;
-    background-color: $color-link;
+    background-color: $color-brand-secondary;
+    border-radius: 5px;
 
 }
 
